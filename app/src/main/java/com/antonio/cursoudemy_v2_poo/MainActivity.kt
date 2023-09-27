@@ -8,6 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         val antonio = Persona("Antonio Lorenzo", "76912388C")
         val anonimo = Persona()
         anonimo.Persona()
@@ -20,10 +21,16 @@ class MainActivity : AppCompatActivity() {
         println(anonimo.nombre)
         println(anonimo.pasaporte)
 
+        var messi:Atleta =Atleta("Messi","4521578C","Futbol")
+        println(messi.alive)
+        println(messi.nombre)
+        println(messi.pasaporte)
+        println(messi.deporte)
 
         val bicho:Pokemon= Pokemon()
         println(bicho.getName())
         bicho.setName("Pepe")
         println(bicho.getName())
+
     }
 }

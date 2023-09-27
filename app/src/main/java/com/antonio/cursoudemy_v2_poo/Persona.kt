@@ -1,6 +1,6 @@
 package com.antonio.cursoudemy_v2_poo
 
-class Persona(var nombre: String = "Anonimo", var pasaporte: String? = null) {
+open class Persona(var nombre: String = "Anonimo", var pasaporte: String? = null) {
     //si pongo String = "Anonimo" creo el objeto con ese nombre por defecto
     var alive: Boolean = true
 
@@ -14,4 +14,8 @@ class Persona(var nombre: String = "Anonimo", var pasaporte: String? = null) {
     fun die() {
         alive = false
     }
+}
+
+class Atleta (nombre:String, pasaporte: String?, var deporte: String): Persona(nombre, pasaporte){
+
 }
